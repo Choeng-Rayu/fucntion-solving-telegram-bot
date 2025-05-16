@@ -1,29 +1,29 @@
-require('dotenv').config();
-const TelegramBot = require('node-telegram-bot-api');
+// require('dotenv').config();
+// const TelegramBot = require('node-telegram-bot-api');
 
-// 1. Get your bot token from @BotFather and add to .env file
-const token = process.env.TELEGRAM_BOT_TOKEN;
+// // 1. Get your bot token from @BotFather and add to .env file
+// const token = process.env.TELEGRAM_BOT_TOKEN;
 
-// 2. Create bot instance
-const bot = new TelegramBot(token, { polling: true });
+// // 2. Create bot instance
+// const bot = new TelegramBot(token, { polling: true });
 
-// 3. Message handler
-bot.on('message', (msg) => {
-  const chatId = msg.chat.id;
-  const userMessage = msg.text;
-  console.log(`Recieved from ${chatID}: "${userMessage}"`);
+// // 3. Message handler
+// bot.on('message', (msg) => {
+//   const chatId = msg.chat.id;
+//   const userMessage = msg.text;
+//   console.log(`Recieved from ${chatID}: "${userMessage}"`);
   
-  console.log(`Received from ${chatId}: "${userMessage}"`);
+//   console.log(`Received from ${chatId}: "${userMessage}"`);
   
-  // 4. Reply to user
-  bot.sendMessage(chatId, `You said: "${userMessage}"`);
-});
+//   // 4. Reply to user
+//   bot.sendMessage(chatId, `You said: "${userMessage}"`);
+// });
 
-// Log bot info
-bot.getMe().then((me) => {
-  console.log(`Bot ${me.username} is running...`);
-});
-console.log('Bot is listening for messages...');
+// // Log bot info
+// bot.getMe().then((me) => {
+//   console.log(`Bot ${me.username} is running...`);
+// });
+// console.log('Bot is listening for messages...');
 
 
 

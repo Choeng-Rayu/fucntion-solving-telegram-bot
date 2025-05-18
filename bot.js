@@ -602,6 +602,8 @@ bot.getMe().then((me) => {
 // Startup sequence
 (async () => {
   await verifyBotConnection();
-  bot.startPolling();
+  bot.startPolling();5
   console.log('🚀 Bot server operational');
 })();
+
+
